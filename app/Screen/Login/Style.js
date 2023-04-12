@@ -1,0 +1,137 @@
+import {Dimensions} from 'react-native';
+const {width, height} = Dimensions.get('screen');
+import Color from '@Asset/color';
+import {widthPercentageToDP, heightPercentageToDP} from '@Theme/Responsive';
+export default {
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  button: {
+    backgroundColor: 'white',
+    height: heightPercentageToDP(6),
+    marginHorizontal: 20,
+    borderRadius: widthPercentageToDP(2),
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginVertical: 5,
+    shadowOffset: {x: 2, y: 2},
+    shadowColor: '#000',
+    shadowOpacity: 0.2,
+  },
+  textInput: {
+    height: 50,
+    borderRadius: 25,
+    borderWidth: 0.5,
+    marginHorizontal: 20,
+    paddingLeft: 10,
+    marginVertical: 5,
+    borderColor: 'rgba(0,0,0,0.2)',
+    fontFamily:'Montserrat-Medium'
+  },
+  closeButton: {
+    height: 40,
+    width: 40,
+    borderRadius: 20,
+    position: 'absolute',
+    top: -50,
+    left: width / 2 - 20,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowOffset: {x: 2, y: 2},
+    shadowColor: '#000',
+    shadowOpacity: 0.2,
+  },
+  signUpAsText: {
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: '#fff',
+    fontSize: widthPercentageToDP(5),
+    marginBottom: heightPercentageToDP(1),
+  },
+  orSaparatorContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: widthPercentageToDP(100),
+    height: heightPercentageToDP(3),
+  },
+  orText: {
+    fontWeight: 'bold',
+    paddingHorizontal: widthPercentageToDP(3),
+  },
+  lines: {
+    backgroundColor: Color.PrimaryColor,
+    width: widthPercentageToDP(40),
+    height: 1,
+  },
+  layoutContent: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  bgCover: {
+    flex: 1,
+    backgroundColor: 'rgba(102, 153, 255,0.8)',
+  },
+  section: {
+    width: '100%',
+    paddingHorizontal: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  inputContainer: {
+    width: '90%',
+    height: 18,
+    shadowColor: '#df0525',
+    shadowRadius: 5,
+    shadowOpacity: 0.15,
+    shadowOffset: {width: 0, height: 1},
+    borderRadius: 15,
+    backgroundColor: '#ffffff',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+  },
+  logInTitle: {
+    color: '#343434',
+    fontSize: 30,
+    textAlign: 'center',
+    fontFamily: 'Fontisto',
+    padding: 20,
+  },
+  inputContainer: {
+    borderColor: '#343434',
+    borderRadius: 10,
+    borderWidth: 1,
+    height: 40,
+    margin: 10,
+    padding: 5,
+    justifyContent: 'center',
+  },
+  btnTxt: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: widthPercentageToDP(4),
+  },
+  appName: {
+    color: '#fff',
+    fontSize: 50,
+    fontWeight: 'bold',
+  },
+  appSloganContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  appSlogan: {
+    color: '#fff',
+    textAlign: 'center',
+    fontSize: 18,
+  },
+  logoContainer: {
+    alignItems: 'center',
+    marginTop: heightPercentageToDP(30),
+  },
+};
